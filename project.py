@@ -119,7 +119,7 @@ def updateprojectput():
     return jsonify({"message": "Project updated (PUT)"})
 
 
-@project.rouqte("/updateprojectpatch", methods=["PATCH"])
+@project.route("/updateprojectpatch", methods=["PATCH"])
 def updateprojectpatch():
     data = request.json
     proj_id = data['proj_id']
